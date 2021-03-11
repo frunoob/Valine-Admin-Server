@@ -148,7 +148,7 @@ exports.notice = (comment) => {
       qq = "&qq=" + process.env.QQ;
     }
     const scContent = `
-${name} ${mail}发表评论：
+${name} ${comment.get("mail")}发表评论：
 ${$(
   text
     .replace(/  <img.*?src="(.*?)".*?>/g, "\n[图片]$1\n")
