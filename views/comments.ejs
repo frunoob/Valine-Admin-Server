@@ -39,7 +39,7 @@
                     <span class="spacer">•</span><span
                         class="vtime"><%= moment.parseZone(date).utcOffset(8).format('YYYY-MM-DD HH:mm:ss'); %></span>
                         <span
-                        class="vtime"><%= comment_list[i].get("ip"); %></span>
+                        class="vtime">IP: <%= comment_list[i].get("ip"); %></span>
                 </div>
                 <div class="vcomment">
                     <%- comment_list[i].get('comment') %>
